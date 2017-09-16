@@ -13,6 +13,5 @@ Algorithm description：
 1. Each gangsters sort in accordance with the arrival time from small to large. Next description based on an ascending of sequencing.
 2. dp [i] is the first i gangsters arrive at the hotel can get the largest ΣPi.
 3. State transition equation: dp [i] = dp [j] + p [i];
-(1). The above equation must meet the conditions that to move from the state of a former j  to the  i gangsters should satisfy: 
-dp [i] <= dp [j];
+(1). The above equation must meet the conditions that to move from the state of a former j to the i gangsters should satisfy: dp [i] <= dp [j];
 (2). To transfer from dp [j] to dp [i], that is, when the size of the door is exactly equal to s [j], after passing the T [i] -T [j] time, the value is greater than or equal to | s [i] -s [j] |; (since the gate has three states per second)，that is: T [i] - T [j]> = s [i] - s [j] |;
